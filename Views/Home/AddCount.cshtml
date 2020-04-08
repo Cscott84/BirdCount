@@ -1,0 +1,36 @@
+﻿
+@model Count
+@{
+    ViewData["Title"] = "Count";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TageHelpers;
+
+<div class="=container text-light">
+
+    <h2 id="counthead" class="text-center"> Enter bird count Data</h2>
+    <div class=" form-group col-6 col-md-4">
+        <form method="post">
+            <label> Enter Name: </label>
+            <input type="text" class="form-control" id="name" placeholder="Name" asp-for="Name">
+
+            <label> State of Observation: </label>
+            <input type="text" class="form-control" id="State" placeholder="State" asp-for="State">
+            <label> Zip Code of Observation: </label>
+            <input type="text" class="form-control" id="Zip" placeholder="Zip" asp-for="Zip">
+            <label> Type of Bird: </label>
+            <input type="text" class="form-control" id="Bird" placeholder="Bird" asp-for="Bird">
+            <label>How Many birds sighted: </label>
+            <input type="text" class="form-control" id="Count" placeholder="Count" asp-for="CountNum">
+            <label> Enter Time of count entry </label>
+            <input type="text" class="form-control" id="Time" placeholder="Time" asp-for="Time">
+            <label> Enter Date of entry </label>
+            <input type="text" class="form-control" id="Date" placeholder="Date" asp-for="Date">
+
+
+
+            <input class="btn btn-light mt-4" type="submit" value="Submit">
+        </form>
+
+    </div>
+</div>
+
