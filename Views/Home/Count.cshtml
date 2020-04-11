@@ -1,7 +1,29 @@
-﻿
+﻿@model List<birdsApp2.Models.CountModel>
 @{
     ViewData["Title"] = "Count";
 }
 
-<h1>Count</h1>
 
+<div class="container-fluid text-light">
+<h1 class="text-center display-3" id="entryH1">Entries</h1>
+    <div id="ediv1" class="bg-light text-dark shadow mt-4 rounded">
+        <table class="table">
+            <tr><th>Name</th><th>State</th><th>Zip</th><th>Bird</th><th>Count</th><th>Time</th><th>Date</th></tr>
+        
+@foreach( var Bird in Model)
+{
+    <tr>
+     <td>@Bird.Name</td>
+     <td>@Bird.State</td>
+     <td>@Bird.Zip</td>
+     <td>@Bird.Bird</td>
+     <td>@Bird.CountNum</td>
+     <td>@Bird.Time</td>
+     <td>@Bird.Date</td>
+
+    </tr>
+}
+            
+            </table>
+        </div>
+</div>

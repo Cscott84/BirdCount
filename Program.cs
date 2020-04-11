@@ -15,7 +15,7 @@ namespace birdsApp2
 
         public class Database
             {
-            public static List<birdsApp2.Models.Count> BirdCount = new List<birdsApp2.Models.Count>();
+            public static List<birdsApp2.Models.CountModel> BirdCount = new List<birdsApp2.Models.CountModel>();
             }
         public static void Main(string[] args)
         {

@@ -6,8 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace birdsApp2.Models
 {
-    public class Count
+    public class CountModel
     {
+        
         public string Name { get; set; }
 
         public string State { get; set; }
